@@ -23,11 +23,11 @@
    stage('upload artifact'){
         steps{ 
             nexusArtifactUploader artifacts: [[artifactId: 'bioMedical',
-             classifier: '', file: 'target/bioMedical-0.0.1-SNAPSHOT.jar',
+             classifier: '', file: 'target/bioMedical-0.0.2-SNAPSHOT.jar',
               type: 'jar']], credentialsId: 'nexusID', groupId: 'fhgfh',
-               nexusUrl: '198.58.119.40:8081',
+               nexusUrl: '198.58.119.40:8081/repository/momo-repo/',
                 nexusVersion: 'nexus3',  protocol: 'http', 
-                repository: 'momo-repo', version: '0.0.1-SNAPSHOT'
+                repository: 'momo-repo', version: '0.0.2-SNAPSHOT'
         }
     }
 
