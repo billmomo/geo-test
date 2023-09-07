@@ -3,17 +3,17 @@
     stages{
     stage('maven clean'){
         steps{
-           mvn clean' 
+           'mvn clean' 
         }
     }
     stage('maven install'){
         steps{
-            mvn install'
+            'mvn install'
         }
     }
     stage('maven package'){
         steps{
-           mvn package'
+           'mvn package'
         }
     }
     
