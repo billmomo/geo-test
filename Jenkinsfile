@@ -26,11 +26,11 @@
              classifier: '', file: 'target/bioMedical-0.0.2-SNAPSHOT.jar',
               type: 'jar']], credentialsId: 'nexusID',
                groupId: 'fhgfh',
-               nexusUrl: '198.58.119.40:8081/repository/momo-repo/',
+               nexusUrl: '198.58.119.40:8081,
                 nexusVersion: 'nexus3', 
                 protocol: 'http', 
                 repository: 'momo-repo',
-                 version: '002'
+                 version: '0.0.2-SNAPSHOT'
         }
     }
 
