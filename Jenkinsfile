@@ -27,7 +27,7 @@
               type: 'jar']], credentialsId: 'nexusID', groupId: 'fhgfh',
                nexusUrl: '198.58.119.40:8081/repository/momo-repo/',
                 nexusVersion: 'nexus3',  protocol: 'http', 
-                repository: 'momo-repo', version: '0.0.2-SNAPSHOT'
+                repository: 'momo-repo', version: '0.0.2'
         }
     }
 
