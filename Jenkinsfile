@@ -21,8 +21,16 @@
         }
     }
    stage('upload artifact'){
-        steps{
-          sh 'curl --upload-file target/bioMedical-0.0.2-SNAPSHOT.jar -u admin:devops -v http://198.58.119.40:8081/repository/momo-repo/'
+        steps{ 
+            nexusArtifactUploader artifacts: [[artifactId: 'bioMedical',
+             classifier: '', file: 'target/bioMedical-0.0.2-SNAPSHOT.jar',
+              type: 'jar']], credentialsId: 'nexusID',
+               groupId: 'fhgfh',
+               nexusUrl: '198.58.119.40:8081/repository/momo-repo/',
+                nexusVersion: 'nexus3', 
+                protocol: 'http', 
+                repository: 'momo-repo',
+                 version: '002'
         }
     }
 
